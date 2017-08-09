@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.txusballesteros.bubbles.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/avatar"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <!-- Notify -->
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:id="@+id/badge"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        app:nbMaxTextLength="2"
+        app:nbBackground="@drawable/bg_shadow"/>
+
+</com.txusballesteros.bubbles.BubbleLayout>
